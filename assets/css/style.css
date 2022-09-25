@@ -1,0 +1,154 @@
+:root{
+    --primary:#e44646;
+    --secondary: #FBF2CF;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    min-height: 100vh;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 1%;
+    background: var(--secondary);
+    color: var(--primary);
+}
+    
+h1 {
+    font-size: 150%;
+    background-color:#C6EBC5;
+    padding: 20px;;
+}
+
+h2 {
+    font-size: 250%;
+    color:var(--primary) ;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    list-style: none;
+    padding-top: 30px;
+}
+
+nav a {
+    color: var(--primary);
+    font-weight: bold;
+    display: inline;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+nav a:hover{
+    color: #C6EBC5;
+}
+
+main{
+    display: absolute;
+    max-width: 100%;
+}
+
+.image{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    background-size: cover;
+    background-position: center;
+}
+.work-title-img{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#message {
+    box-sizing: border-box;
+    position: relative; 
+    text-align: center;
+    top:300px; left: 1100px;
+    width: 300px;
+    height: 40px;
+    background-color:var(--secondary) ;
+    font-size: 200%;
+    color: var(--primary);
+}
+
+section{
+    height: fit-content;
+    display: inline-flexbox;
+    flex-direction: row;
+    margin: 30px;
+}
+   
+.about-me-content{
+    font-size: 150%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    }
+
+.work{
+    position:relative;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.work-title {
+    justify-content: flex-start;
+}
+
+.work-img {
+    width: 30%;
+    padding: 10px;
+    background: #FBF2CF;
+
+}
+
+
+.contact-me ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    padding-top: 30px;
+}
+
+.contact-me-content {
+    color: var(--primary);
+    font-weight: bold;
+    display: inline;
+    width:25%;
+    justify-content: space-around;
+    text-decoration: underline;
+    list-style: none;
+    text-decoration-thickness: 3px;
+}
+
+footer{
+    text-align: center;
+    margin: 40px;
+}
+
+@media screen and (max-width: 500px){
+    header{flex-direction: column;}
+}
+
+@media screen and (max-width: 768px) {
+    main, 
+    nav {flex-direction:column;
+    }
+}
+    
