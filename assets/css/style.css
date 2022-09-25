@@ -89,23 +89,40 @@ main{
 }
 
 section{
+    display: flexbox;
     height: fit-content;
-    display: inline-flexbox;
-    flex-direction: row;
     margin: 30px;
 }
+ 
+.about-me-container{
+    margin: 25px,0;
+    display:flex;
+    padding: 25px;
+}
+
+.about-me-title{
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    text-align: right;
+    border-right: #A1C298;
    
+}
 .about-me-content{
     font-size: 150%;
-    width: auto;
-    display: flex;
+    padding: 10px;
+    width: 
+    display: inline-block;
     flex-direction: row;
-    }
+       }
 
 .work{
     position:relative;
     width:100%;
+    padding: 25px;
     flex-wrap: wrap;
+    margin: 10px;
 }
 
 .work-title {
@@ -116,9 +133,11 @@ section{
     width: 30%;
     padding: 10px;
     background: #FBF2CF;
-
 }
 
+.contact-me{
+    padding: 25px;
+}
 
 .contact-me ul {
     display: flex;
