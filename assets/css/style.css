@@ -97,10 +97,6 @@ p #message {
 
 
 
-#work-image {
-
-}
-
 .work-title-img{
     margin-bottom: 10px;
     display: inline-block;
@@ -156,15 +152,9 @@ p.about-me-descr {
 
 section .work-img{
     display:inline-flexbox;
-       
+     
 
 }
-/* div #work-img{ 
-    flex: 5;
-    flex-wrap: wrap;
-    align-items: flex-start;
-   
-} */
 
 #work {
     flex:5;
