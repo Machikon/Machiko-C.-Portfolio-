@@ -13,23 +13,25 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    min-height: 100vh;
-    
+       
 }
 
-header{
+header,
+footer {
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
     padding: 1%;
     background: var(--secondary);
     color: var(--primary);
 }
     
 h1 {
-    font-size: 150%;
+    font-size: 200%;
     background-color:#C6EBC5;
-    padding: 20px;;
+    padding: 20px;
+    padding-right: 200px;
+    padding-left: 300px;
 }
 
 h2 {
@@ -39,10 +41,14 @@ h2 {
 
 nav ul {
     display: flex;
+    font-size: 30px;
     justify-content: space-between;
     min-width: 400px;
     list-style: none;
     padding-top: 30px;
+}
+li {
+    display: inline;
 }
 
 nav a {
@@ -57,10 +63,12 @@ nav a:hover{
     color: #C6EBC5;
 }
 
-main{
-    display: absolute;
+maine{
+    display: flex;
     max-width: 100%;
+    flex-wrap: wrap;
 }
+
 
 .image{
     height: 400px;
@@ -69,6 +77,10 @@ main{
     background-image: url(https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg?auto=compress&cs=tinysrgb&w=1600);
     background-size: cover;
     background-position: center;
+}
+
+p #message {
+    display: relative;
 }
 
 #message {
@@ -83,92 +95,157 @@ main{
     color: var(--primary);
 }
 
+
+
+#work-image {
+
+}
+
 .work-title-img{
     margin-bottom: 10px;
     display: inline-block;
 }
 
-section{
-    display: flexbox;
-    height: fit-content;
-    margin: 30px;
+section {
+    display: block;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 0px;
+    flex-direction: column;
+    width: 100%;
 }
  
-.about-me-container{
-    margin: 25px,0;
-    display:flex;
-    padding: 25px;
+hr.solid {
+    border-top: 3px solid #e44646;
+    padding: 0;
+    width: 100%;
 }
 
-.about-me-title{
+.containter{
+    flex: 3;
     display: flex;
-    height: 100%;
-    padding: 10px;
-    margin: 10px;
-    text-align: right;
-    border-right: #A1C298;
-   
+    flex-wrap:wrap;
+    align-items: flex-start;
 }
-.about-me-content{
+
+
+#about-me {
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.about-me{
+    width: 100%;
+    
+}
+
+
+p.about-me-descr {
     font-size: 150%;
-    padding: 10px;
-    width: 
-    display: inline-block;
-    flex-direction: row;
-       }
+    margin-top: 10px;
+    margin-left: 30px;
+}
 
 .work{
-    position:relative;
     width:100%;
-    padding: 25px;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-
-.work-title {
-    justify-content: flex-start;
-}
-
-.work-img {
-    width: 30%;
-    padding: 10px;
-    background: #FBF2CF;
-}
-
-.contact-me{
-    padding: 25px;
-}
-
-.contact-me ul {
     display: flex;
-    justify-content: space-between;
-    min-width: 400px;
-    padding-top: 30px;
 }
 
+section .work-img{
+    display:inline-flexbox;
+       
+
+}
+/* div #work-img{ 
+    flex: 5;
+    flex-wrap: wrap;
+    align-items: flex-start;
+   
+} */
+
+#work {
+    flex:5;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    flex-flow: wrap;
+}
+
+/* #work-img {
+    width: 70%;
+    padding: 20px;
+    background: #FBF2CF;
+    display: flex; 
+}   */
+
+
+
+.div header{
+    position: relative;
+    display: block;
+    margin-top: 15px;
+}
+
+
+#contact-me {
+    width: 100%;
+    padding: 25px;
+    position: flex;
+    margin: 10px;
+    
+    }
+
+ul.contact-me-content{
+    padding-top: 20px;
+    padding-right: 30px;
+    position: flex;
+    text-align: center;
+}
+
+li{
+    padding-right: 30px;
+    
+    
+}
 .contact-me-content {
     color: var(--primary);
     font-weight: bold;
-    display: inline;
-    width:25%;
-    justify-content: space-around;
-    text-decoration: underline;
-    list-style: none;
-    text-decoration-thickness: 3px;
+    width: 100%;
+    font-size: 150%;
+    text-decoration: underline; 
+    color: #e44646;
 }
 
-footer{
+footer p{
     text-align: center;
-    margin: 40px;
+    font-size: 120%;
+    margin: auto;
+    padding: 1%;
 }
 
-@media screen and (max-width: 500px){
-    header{flex-direction: column;}
+
+
+@media screen and (max-width: 1200px) {
+    header
+         {flex-direction:column;
+    }
 }
 
+@media screen and (max-width: 768px){
+    main,
+    nav{flex-direction: column;}
+    
+}
 @media screen and (max-width: 768px) {
-    main, 
-    nav {flex-direction:column;
+    #contact-me {flex-direction: column;
     }
 }
     
+/* 
+@media screen and (max-width:768px) {
+    .contact-me-content {flex-direction: column;}
+}   */
