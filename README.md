@@ -20,4 +20,6 @@ This application was created by following the requirements and mock-up for my cl
 ## Link to GitHub
 
 
-## Screenshot of the application
+## Screenshot of the application and the url
+
+https://machikon.github.io/MachikoC.Portfolio/
